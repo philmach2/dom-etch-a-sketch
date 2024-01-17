@@ -43,7 +43,7 @@ span {
     background-image: radial-gradient(rgb(245, 110, 90), rgb(215, 5, 15));
     border: 2px solid black;
     border-radius: 2%;
-    box-shadow: 5px 5px rgb(19, 19, 22);
+    box-shadow: 6px 6px rgb(19, 19, 22);
 }
 
 #sketch-screen {
@@ -76,6 +76,12 @@ span {
 }
 
 #knob > button {
+    font-family: "Bad Script", cursive;
+    font-weight: 400;
+    font-size: 52px;
+    font-style: normal;
+    color: rgb(101, 101, 101);
+    text-shadow: 0.5px 0.5px rgb(131, 131, 131);
     background-image: radial-gradient(rgb(230, 230, 230), rgb(255, 255, 255));
     border-radius: 50%;
     border: 2px dashed rgb(101, 101, 101);

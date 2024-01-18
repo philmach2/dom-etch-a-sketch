@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Etch-a-Sketch</title>
+    <title>DOM-Etch-a-Sketch</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,16 +12,25 @@
 <body>
 
     <div id="container">
-
         <div id="sketch-container">
             <h1 class="bad-script-regular">The<span> DOM </span> Etch-A-Sketch</h1>
-            <div id="sketch-screen"></div>
+
+            <div id="sketch-screen">
+                <!-- JavaScript fills this space -->
+            </div>
+
             <div id="knob">
                 <button id="less">-</button>
                 <button id="more">+</button>
             </div>
-            
+
         </div>
+
+        <div class="footer">
+            <a href="https://github.com/philmach2">Build by Phil Mach</a>
+            <img src="img/github-logo.png" alt="github-logo">
+        </div>
+        
     </div>
 
     <script src="main.js"></script>

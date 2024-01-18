@@ -66,7 +66,6 @@ function draw(event) {
 
     const targetElement = event.target;
     
-    // Check if the target element has the 'hover' class
     if (targetElement.classList.contains('hover')) {
         targetElement.style.backgroundColor = 'rgb(101, 101, 101)';
     };

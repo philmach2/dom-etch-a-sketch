@@ -1,5 +1,5 @@
 # The DOM Etch-a-Sketch
-Inspired by my curiosity to play with the beautiful feature, unique to JavaScript, of manipulating the DOM.
+Inspired by my curiosity to play with the beautiful feature that is unique to JavaScript - manipulating the DOM.
 
 **Link to project:** https://dom-etch-a-sketch.netlify.app/
 

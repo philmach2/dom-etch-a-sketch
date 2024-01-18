@@ -1,5 +1,5 @@
 # The DOM Etch-a-Sketch
-Inspired by my curiosity to play with the beautiful feature that is unique to JavaScript - manipulating the DOM.
+Inspired by my curiosity to play with the beautiful feature, unique to JavaScript, of manipulating the DOM.
 
 **Link to project:** https://dom-etch-a-sketch.netlify.app/
 
@@ -7,24 +7,18 @@ Inspired by my curiosity to play with the beautiful feature that is unique to Ja
 
 **Tech used:** HTML, CSS, JavaScript
 
-Here's where you can go to town on how you actually built this thing. Write as much as you can here, it's totally fine if it's not too much just make sure you write *something*. If you don't have too much experience on your resume working on the front end that's totally fine. This is where you can really show off your passion and make up for that ten fold.
+How the heck did I build this thing? Well, vanilla can be a wonderful thing. I had a bunch of fun tinkering with the CSS to mesh a cartoonish and realistic aesthetic and wanted to keep it lean, clean, and... that's it. All of the functionality is happening in the client-side JavaScript, therefore no creations are saved in a database. It's there, and then it's gone.
 
-## Optimizations
-*(optional)*
+I added event listeners to the white knobs to increase or decrease the size of the drawing screen. Plus, a nice little message appears if the user tries to go beyond the drawing screen limits. I added classes to the divs generated to form the grid to listen for mouse events. And there's more I want to add...
+- A 'Shake' button that adds a shaky animation and imitates the movement of sand - like the real thing - deleting the drawing.
 
-You don't have to include this section but interviewers *love* that you can not only deliver a final product that looks great but also functions efficiently. Did you write something then refactor it later and the result was 5x faster than the original implementation? Did you cache your assets? Things that you write in this section are **GREAT** to bring up in interviews and you can use this section as reference when studying for technical interviews!
+
 
 ## Lessons Learned:
 
-No matter what your experience level, being an engineer means continuously learning. Every time you build something you always have those *whoa this is awesome* or *wow I actually did it!* moments. This is where you should share those moments! Recruiters and interviewers love to see that you're self-aware and passionate about growing.
+I ran into a few headaches, and some small failures, but then I nipped those in the bud. 
 
-## Examples:
-Take a look at these couple examples that I have in my own portfolio:
+Initially, I was hoisting all of my variables at the top of my JavaScript document - an example being 'const drawScreen = document.querySelectorAll('div.hover');'. However, when I would call the decrease or increase functions to change the grid size, the newly called grid-creating function wasn't adding the appropriate 'hover' class that I needed to draw. Since the program is creating so many divs to fill the grid, and I want to target them all, I converted them from a NodeList into an Array.
 
-**Palettable:** https://github.com/alecortega/palettable
-
-**Twitter Battle:** https://github.com/alecortega/twitter-battle
-
-**Patch Panel:** https://github.com/alecortega/patch-panel
-
+I had to fiddle with what I was applying the 'hover' class to as well. Initially, I was applying the class to both the 'columns' and the 'rows' being generated. Then when I was running my draw function, it was drawing entire columns rather than singular divs, so I applied the class list at grid creation to 'rows' only. On a similar note, I was attempting to apply styling via JavaScript with the 'draw' function and had to use the 'target' property to properly color each div when the mouse entered into it.
 

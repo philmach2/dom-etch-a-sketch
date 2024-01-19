@@ -7,7 +7,7 @@ Inspired by my curiosity to play with the beautiful feature, unique to JavaScrip
 
 ## How It's Made:
 
-**Tech used:** HTML, CSS, JavaScript
+**Tech used:** JavaScript, CSS, HTML
 
 How the heck did I build this thing? Well, vanilla can be a wonderful thing. I had a bunch of fun tinkering with the CSS to mesh a cartoonish and realistic aesthetic and wanted to keep it lean, clean, and... that's it. All of the functionality is happening in the client-side JavaScript, therefore no creations are saved in a database. It's there, and then it's gone.
 
